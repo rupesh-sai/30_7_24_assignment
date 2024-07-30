@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        padding: 5px;
+        padding-right: 15px;
+        background-color: blueviolet;
+        color: white;
+        position: relative;
+        border-radius: 5px;
+        font-size: 1.2rem;
+      }
+      .btn::after {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border: 2px solid white;
+        border-top: none;
+        border-right: none;
+        position: relative;
+        top: -3px;
+        left: 10px;
+        transform: rotate(-45deg);
+      }
+      .container:hover .btn::after {
+        transform: rotate(135deg);
+        top: 3px;
+      }
+      .list {
+        margin: 0;
+        list-style-type: none;
+        padding: 0;
+        width: 175px;
+        background-color: antiquewhite;
+        height: 400px;
+        font-size: 1.2rem;
+        overflow-y: scroll;
+        border-radius: 10px;
+      }
+      .list > li {
+        padding: 5px;
+        margin: 5px;
+      }
+      .list > li:hover {
+        background-color: aquamarine;
+        border-radius: 10px;
+      }
+      .list {
+        display: none;
+        position: absolute;
+        top: 100%;
+      }
+      .container:hover .list,
+      .list:hover {
+        display: block;
+      }
+      .container {
+        display: inline-block;
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">LOGIN</button>
+      <ul class="list">
+        <li>NetBanking</li>
+        <li>Credit Card Portal</li>
+        <li>Loans Portal</li>
+        <li>Home Loans</li>
+        <li>Fixed Deposits</li>
+        <li>Xpressway</li>
+        <li>MyBusiness Digital Banking</li>
+        <li>Fastag</li>
+        <li>Merchant Standing Instructions</li>
+        <li>Prepaid/Forex Card</li>
+        <li>Register</li>
+      </ul>
+    </div>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed hic
+      asperiores ullam dicta explicabo natus et nulla porro? Debitis voluptas
+      excepturi pariatur <span>grfrhrf</span> maxime labore! Earum vero repellat itaque optio
+      tempore.
+    </p>
+  </body>
+</html>

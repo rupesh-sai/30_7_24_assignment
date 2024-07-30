@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .list{
+            display: none;
+        }
+        .btn{
+            background-color: blueviolet;
+            border: none;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .btn:hover{
+            background-color: cadetblue;
+        }
+        .list{
+            list-style-type: none;
+            width: 200px;
+            background-color: antiquewhite;
+            padding: 5px;
+            border-radius: 15px;
+            /* margin-top: 5px; */
+            margin: 0;
+            position: absolute;
+            top: 100%;
+        }
+        .list>li{
+            margin: 5px;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .list>li:hover{
+            background-color: skyblue;
+        }
+        li:first-child{
+            display: block;
+            padding: 5px;
+            font-weight: bold;
+        }
+        li:first-child:hover{
+            background-color: inherit;
+            cursor: pointer;
+        }
+        .container{
+            display: inline-block;
+            position: relative;
+        }
+        
+        .container:hover .list, .list:hover{
+            display: block;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="btn">My aadhaar</button>
+      <ul class="list">
+        <li>Update your aadhaar</li>
+        <li>Document update</li>
+        <li>Check Aadhaar Update Status</li>
+        <li>Update Demographics Data & Check Status</li>
+        <li>List of Supporting Documents for Aadhaar Enrolment & Update</li>
+        <li>Enrolment & Update Forms</li>
+        <li>Aadhaar Enrolment & Update Charges</li>
+        <li>Aadhaar Update History</li>
+        <li>Update Aadhaar at Enrolment/Update Center</li>
+      </ul>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita perspiciatis non veritatis ex quasi sunt, dolorem nemo aperiam minus iure, ipsa voluptatem totam animi sed adipisci soluta maxime doloremque cum.</p>
+  </body>
+</html>
